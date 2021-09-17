@@ -39,10 +39,14 @@ footer {
   color: rgb(117, 96, 169);
 }
 
+#footer-a {
+  color: rgb(52, 15, 76);
+}
+
 #footer-a:hover {
-  color: rgb(117, 96, 169);
+  color: rgb(8, 18, 132);
 }
 
 #date {
-  color: rgb(226, 226, 114);
+  color: rgb(255, 255, 0);
 }
