@@ -12,6 +12,11 @@ header {
   padding-left: 100px;
   border-radius: 5px;
   color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -20,6 +25,7 @@ body {
 }
 img {
   max-height: 225px;
+  width: auto;
   float: right;
   margin-right: 15px;
   border-radius: 10px;
