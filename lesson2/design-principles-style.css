@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#title {
+    margin: 0 auto;
+    grid-column: 1/4;
+}
+
+#column-1,
+#column-2,
+#column-3 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#workstack-img,
+#samsung-img,
+#dell-img {
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    #title {
+        grid-column: 1;
+    }
+    #column-1,
+    #column-2,
+    #column-3 {
+        grid-column: 1;
+    }
+}
