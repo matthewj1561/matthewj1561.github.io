@@ -26,6 +26,8 @@ h2 {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 h3 {
     background-color: rgb(66, 88, 169);

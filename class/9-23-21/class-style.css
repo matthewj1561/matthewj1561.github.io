@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(235, 231, 231);
+}
+main {
+    max-height: 0.5fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(235, 231, 231);
+    gap: 40px;
+    margin: 0 150px;
+}
+
+div {
+    /* margin: 125px 70px 150px 70px; */
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+    align-self: center;
+    box-shadow: 0px 10px rgb(209, 232, 250);
+}
+#column {
+    margin-left: 40px;
+}
+#column-2 {
+    height: 75%;
+    margin: 125px 0px 150px 0px;
+}
+#column-3 {
+    margin-right: 40px;
+}
+img {
+    padding-top: 75px;
+}
+
+#most-popular {
+    background-color: rgb(18, 170, 235);
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+p {
+    font-size: larger;
+}
+
+h2 {
+    color: rgb(17, 171, 236);
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(17, 171, 236);
+    font-size: 70px;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: rgb(255, 207, 45);
+    height: 3em;
+    width: 75%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.side-buttons {
+    width: 40%;
+    background-color: rgb(216, 216, 216);
+}
+
+.price-desc {
+    color: rgb(17, 171, 236);
+    font-weight: bold;
+}
