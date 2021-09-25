@@ -65,6 +65,7 @@ main {
         rgba(97, 205, 230, 0.598)
     );
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 #title {
@@ -90,6 +91,14 @@ main {
         rgb(17, 38, 117),
         rgba(97, 205, 230, 0.598)
     );
+    margin: 0 10%;
+}
+
+#column-1 {
+    margin-left: 10%;
+}
+#column-3 {
+    margin-right: 10%;
 }
 
 #workstack-img,
@@ -110,7 +119,6 @@ p {
 footer {
     padding-top: 10px;
     background-color: rgb(66, 88, 169);
-    border-radius: 5px;
     height: 6em;
     text-align: center;
     color: white;
