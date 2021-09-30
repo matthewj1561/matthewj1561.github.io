@@ -48,6 +48,13 @@ h2 {
     font-weight: bold;
 }
 
+.github-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+}
+
 h1 {
     color: rgb(17, 171, 236);
     font-size: 70px;
