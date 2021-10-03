@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Overpass, serif;
+}
+
+#nav-ul {
+    background-color: #101d42;
+    margin: 0;
+    padding: 20px 0 20px 80px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#nav-ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#nav-ul li a:hover {
+    background-color: #f07167;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+
+h1 {
+    margin: 0 10px;
+}
+
+#dropdown {
+    background-color: #101d42;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    list-style: none;
+    display: none;
+    transition: all 1s;
+}
+#nav-ul-dropdown {
+    display: none;
+    list-style: none;
+    text-align: center;
+}
+
+#nav-ul-dropdown li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#nav-ul-dropdown li {
+    padding: 20px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#nav-ul-dropdown li:hover {
+    background-color: #f07167;
+    transition: all 0.5s;
+}
+
+#hamburger {
+    max-width: 50px;
+    padding-left: 40px;
+}
+
+main {
+    background-color: #cde6f5;
+    padding-bottom: 20px;
+}
+
+#title {
+    text-align: center;
+    margin: 40px auto;
+    grid-column: 1/4;
+    width: 100%;
+    color: white;
+    border-bottom: solid;
+    padding-bottom: 60px;
+}
+
+p {
+    margin: 10px;
+    padding: 20px 20px;
+    color: #101d42;
+}
+/* Index Page Exclusive */
+
+.logo img {
+    width: 200px;
+    margin: 0 auto 20px auto;
+
+    display: block;
+}
+.logo {
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#flex-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 15%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #8da7be;
+}
+
+/* Audience Page Exclusive */
+
+#audience-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#target {
+    border-bottom: solid;
+    border-color: #8da7be;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+#persona-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 5%;
+}
+
+.personas {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8da7be;
+    text-align: center;
+    padding: 5px;
+}
+
+#scenarios {
+    padding: 5px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8da7be;
+    text-align: center;
+}
+/* Typography Page Exclusive */
+
+#typ-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.8%;
+}
+.typ-inner {
+    margin: 2%;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8da7be;
+    text-align: center;
+    width: 85%;
+}
+
+/* Color Page Exclusive */
+
+#color-main {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 5%;
+}
+
+#color-main img {
+    width: 50%;
+}
+
+#color-text ul li {
+    padding: 7%;
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: #101d42;
+    height: 6em;
+    text-align: center;
+    color: white;
+}
+
+#date,
+footer a {
+    color: #f07167;
+}
+
+.home-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 3em;
+    width: 10%;
+    color: white;
+    background-color: #89023e;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.home-button:hover {
+    background-color: #f07167;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 800px) {
+    #nav-ul {
+        display: none;
+    }
+    #dropdown {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #persona-container {
+        grid-template-columns: 1fr;
+    }
+    #color-main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #color-main img {
+        width: 100%;
+        height: 300px;
+    }
+}
