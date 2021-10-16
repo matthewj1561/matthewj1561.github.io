@@ -1,4 +1,4 @@
-let date_element = document.querySelector('#date');
+let date_element = document.querySelector('#updated');
 date_element.innerHTML = 'Last updated: ' + document.lastModified;
 
 const menu = document.querySelector('#mobile-menu');
@@ -9,6 +9,7 @@ menu.addEventListener('click', function () {
     menuLinks.classList.toggle('active');
 });
 
+// Wayfinding
 let navLinks = document.getElementsByClassName('navbar__links');
 let currentPage = document.getElementById('cur-page').innerHTML;
 currentPage = currentPage.trim().split(' ');
@@ -21,9 +22,19 @@ for (let link of navLinks) {
     }
 }
 
-let curDay = new Date();
-curDay = curDay.getDay();
+let curDate = new Date();
+curDay = curDate.getDay();
 let banner = document.getElementById('pancakes');
 if (curDay == 5) {
     banner.style.display = 'block';
 }
+
+footerDate =
+    'Current Date : ' +
+    curDate.getFullYear() +
+    '-' +
+    (curDate.getMonth() + 1) +
+    '-' +
+    curDate.getDate();
+
+document.getElementById('date').innerHTML = footerDate;
