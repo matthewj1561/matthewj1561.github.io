@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section {
+    background-color: antiquewhite;
+    border: solid;
+    margin: 3px;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: bisque;
+    margin: 20px, 0, 0, 0;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 80%;
+    height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
