@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGWeather</title>
+    <link rel="icon" href="../favicon-16x16.png">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="css/preston-9.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="pancakes">
+        <h1>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h1>
+
+    </div>
+    <header>
+        <div class="logo">
+            <img src="../../images/weather-icon.png" alt="Small weather icon.">
+            <div id="logo-text">
+                <h1>NGWeather</h1>
+                <div>The best most accurate weather. Period.</div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                    Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="preston-9.html" class="navbar__links">
+                    Preston
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="soda-springs-9.html" class="navbar__links">
+                    Soda Springs
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__links">
+                    Fish Haven
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__links">
+                    Storm Center
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="gallery-9.html" class="navbar__links">
+                    Gallery
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <h1 id="cur-page">
+            Storm Center
+        </h1>
+        <h2>Please fill out this form to report a storm.</h2>
+
+        <form method="get" action="thanks.html">
+            <fieldset id="top-info">
+                <legend><h1>Contact Information</h1></legend>
+                <label >Full Name<span class="req">(required)</span>
+                    
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                </label>
+                
+                <label >Email
+                    
+                    <input type="email" name="email" placeholder="name@gmail.com">
+                </label>
+                
+                <label >Phone Number<span class="req">(required)</span>
+                    
+                    <input type="tel" name="tel" required>
+                </label>
+                
+                <label >Zip Code<span class="req">(required)</span>
+                    
+                    <input type="number" name="zip" required>
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><h1>Storm Information</h1></legend>
+                <label>Storm Date<span class="req">(required)</span>
+                    <input type="date" name="date" required>
+                </label>
+                
+                <div id="storm-type">
+                    <label for="storm">Storm Type
+                        <input list="storms" name="storm" >
+                    </label>
+                </div>
+                <datalist >
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option> 
+                </datalist>
+                
+                <br>   
+                    <label  for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;
+                        
+                        <input type="range"  value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id='ratingvalue'>5</span>
+                    </label>
+                    <datalist >
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                
+                
+                <div>
+                    <label >Storm Region
+                        
+                        <select name="region">
+                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            
+
+            <fieldset id="danger">
+                <legend><h1>Are you in danger?</h1></legend>
+                <div class="surroundDanger">
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="no">No
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="maybe">Maybe
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="Yes">Yes
+                    </label>
+                </div>
+                
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend><h1>Additional Information or Comments: </h1></legend>
+                <label>
+                    <textarea name="additional" rows="4" cols="30"></textarea>
+                </label>
+            </fieldset>
+            
+
+            <input type="submit" value="Send Your Storm Report" class="submitBtn">
+        </form>
+        
+        
+
+        
+  
+        <div id="contact-foot">
+            <img src="images/map.png" alt="Picture of map">
+            <div id="contact-info">
+                <div id="address">
+                    <h3>NGWeather</h3>
+                    <p><img src="images/location.png" alt="Location icon.">123 W 3rd S</p>
+                    <p>Rexburg, Idaho</p>
+                </div>
+                <div id="info">
+                    <p><img src="images/phone-call.png" alt="Phone call icon.">123-456-7890</p>
+                    <p><img src="images/letter.png" alt="Letter icon.">NGweather@gmail.com</p>
+                </div>
+                <div id="social-media">
+                    <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FTwitter-128.webp?v=1623380257891" alt="Twitter">
+                    <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FYoutube-128.webp?v=1623380260083" alt="Youtube.">
+            
+                    <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FInstagram-128.webp?v=1623380262455" alt="Instagram.">
+                    <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FFacebook-128.webp?v=1623380264961" alt="Facebook.">
+                </div>
+            </div>
+    
+    
+        </div>
+      </main>
+
+
+    <a href='../../index.html'><button class='home-button'>View Course Portal</button></a>
+    <footer>
+        
+        @NGWeather | Attributions | Matthew D. James 
+        <p id="updated">
+
+        </p>
+        <p id="date">
+
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                 'Overpass'
+    ]
+  }
+});
+    </script>
+</body>
+</html>

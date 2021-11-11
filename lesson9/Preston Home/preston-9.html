@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGWeather</title>
+    <link rel="icon" href="../favicon-16x16.png">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="css/preston-9.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+</head>
+<body>
+    <div id="pancakes">
+        <h1>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h1>
+
+    </div>
+    <header>
+        <div class="logo">
+            <img src="../../images/weather-icon.png" alt="Small weather icon.">
+            <div id="logo-text">
+                <h1>NGWeather</h1>
+                <div>The best most accurate weather. Period.</div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                    Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="preston-9.html" class="navbar__links">
+                    Preston
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="soda-springs-9.html" class="navbar__links">
+                    Soda Springs
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__links">
+                    Fish Haven
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="stormcenter.html" class="navbar__links">
+                    Storm Center
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="gallery-9.html" class="navbar__links">
+                    Gallery
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        
+        <div id="flex-main">
+                <h1 id="cur-page">
+                    Preston Idaho
+                </h1>
+                
+                <div id="banner">
+                    <picture>
+                        
+                        <source srcset="images/PrestonHero_1000_medium.jpg" media="(min-width: 450px) and (max-width: 799px)">
+                            <source srcset="images\PrestonHero_1500_large.jpg" media="(min-width: 800px)">
+                    <img id="weather-img" src="images\PrestonHero_500_small.jpg" alt="Weather banner.">
+                    </picture>
+                    <!-- <div class='picture-status'>
+                        Large
+                    </div>
+                    <div class='picture-status'>
+                        Medium
+                    </div>
+                    <div class='picture-status'>
+                        Small
+                    </div> -->
+                    <div id="today-overlay">
+                        <h3 id="overlay-title">Weather Summary</h3>
+                        <p>Currently : Cloudy</p>
+                        <p>High : <span id="high-temp">45</span> °F</p>
+                        <p>Wind Chill : <span id="wind-chill"></span> °F</p>
+                        <p>Humidity : 20%</p>
+                        <p>Wind Speed : <span id="wind-speed">12</span> mph</p>
+                    </div>
+                </div>  
+                <h2 id="forecast-title">
+                    5 Day Forecast
+                </h2>
+                <div id="forecast">
+                    <p class="day">Monday</p>
+                    <p class="day">Tuesday</p>
+                    <p class="day">Wednesday</p>
+                    <p class="day">Thursday</p>
+                    <p class="day">Friday</p>
+                    <div>
+                        <img src="images/sun.png" alt="Clipart of the sun.">
+                        <p>45 °F</p>
+                    </div>
+                    <div>
+                        <img src="images/sun.png" alt="Clipart of the sun.">
+                        <p>45 °F</p>
+                    </div>
+                    <div>
+                        <img src="images/sun.png" alt="Clipart of the sun.">
+                        <p>45 °F</p>
+                    </div>
+                    <div>
+                        <img src="images/sun.png" alt="Clipart of the sun.">
+                        <p>45 °F</p>
+                    </div>
+                    <div>
+                        <img src="images/sun.png" alt="Clipart of the sun.">
+                        <p>45 °F</p>
+                    </div>
+                </div>
+                <div id="article">
+                    <img src="images/idaho-weather.png"  alt="Idaho weather warning picture.">
+                    <h2>Weather Advisory Warning</h2>
+                    <div>by Jeremy Smith</div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo deserunt nulla error reiciendis nihil commodi doloribus natus qui obcaecati, accusamus maxime minima voluptatum ea esse distinctio tempora deleniti! Delectus, rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae unde quisquam minima illo repudiandae quidem ipsum architecto accusamus eaque. Provident similique ullam dignissimos vero beatae cum ducimus iure quos.</p>
+
+                </div>
+
+                <div id="contact-foot">
+                    <img src="images/map.png" alt="Picture of map">
+                    <div id="contact-info">
+                        <div id="address">
+                            <h3>NGWeather</h3>
+                            <p><img src="images/location.png" alt="Location icon.">123 W 3rd S</p>
+                            <p>Rexburg, Idaho</p>
+                        </div>
+                        <div id="info">
+                            <p><img src="images/phone-call.png" alt="Phone call icon.">123-456-7890</p>
+                            <p><img src="images/letter.png" alt="Letter icon.">NGweather@gmail.com</p>
+                        </div>
+                        <div id="social-media">
+                            <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FTwitter-128.webp?v=1623380257891" alt="Twitter">
+                            <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FYoutube-128.webp?v=1623380260083" alt="Youtube.">
+                    
+                            <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FInstagram-128.webp?v=1623380262455" alt="Instagram.">
+                            <img src="https://cdn.glitch.com/e7977584-7e29-4290-8058-2d87aa5fe653%2FFacebook-128.webp?v=1623380264961" alt="Facebook.">
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+    </main>
+    <a href='../../index.html'><button class='home-button'>View Course Portal</button></a>
+    <footer>
+        
+        @NGWeather | Attributions | Matthew D. James 
+        <p id="updated">
+
+        </p>
+        <p id="date">
+
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                 'Overpass'
+    ]
+  }
+});
+    </script>
+</body>
+</html>
