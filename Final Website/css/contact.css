@@ -1,0 +1,16 @@
+body {
+    background-color: #c0d6df;
+}
+
+#main {
+    text-align: center;
+}
+#phone {
+    margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        width: 350px;
+    }
+}

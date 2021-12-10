@@ -1,0 +1,38 @@
+body {
+    background-color: #c0d6df;
+}
+
+#form {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#info {
+    list-style-type: none;
+}
+
+#fillout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+.button {
+    margin: 10px auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        width: 100%;
+    }
+    #fillout {
+        width: 100%;
+    }
+}

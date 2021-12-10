@@ -1,0 +1,103 @@
+.main {
+    position: relative;
+    text-align: center;
+}
+.image-overlay {
+    position: absolute;
+    background-color: #383073;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#top-text {
+    top: 5%;
+    left: 2%;
+}
+#bottom-text {
+    top: 18%;
+    left: 9%;
+    border-radius: 0 0 10px 10px;
+}
+
+#book-button {
+    position: absolute;
+    bottom: 20%;
+    right: 7%;
+    width: 300px;
+    font-size: xx-large;
+    font-weight: 600;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #383073;
+    color: white;
+}
+#book-button:hover {
+    transition: all 1s;
+    background-color: #ff7477;
+}
+
+.rexburg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
+
+#left {
+    grid-column: 1;
+    /* margin: 25px; */
+}
+
+#left h1 {
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+#left p {
+    padding: 50px;
+}
+
+#right {
+    grid-column: 2;
+}
+
+#burg-temp {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+    #book-button {
+        position: static;
+    }
+    .rexburg {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-overlay {
+        font-size: xx-small;
+    }
+    #bottom-text {
+        top: 13%;
+        left: 9%;
+        border-radius: 0 0 10px 10px;
+    }
+    .rexburg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-overlay {
+        position: static;
+        border-radius: 0;
+    }
+    #book-button {
+        margin-top: 20px;
+    }
+
+    #left p {
+        padding: 10px;
+    }
+}
